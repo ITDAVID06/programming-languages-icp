@@ -1,2 +1,59 @@
-Hello IRCITE2024
-<img src="logo.png" height="350px"/>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Programming Languages</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="circular"></div>
+        <header>
+            <a href="#"><img src="images/logo.png" class="logo"></a>
+            <uL>
+                <li><a href="#1" class="TABS" onClick="document.location.reload(true)">Home</a></li>
+                <li><a href="menu.html" class="TABS">Menu</a></li>
+                <li><a href="about.html" class="TABS">About</a></li>
+                <li><a href="startcoding.html" class="TABS">Start Coding</a></li>
+            </uL>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>Solve the problem <br> Write the <span>code</span></h2>
+                <p> Coding has long been an essential part of programming. Want to learn more? Drag your cursor to the icons below.  
+                   </p>
+                <a href="about.html"> Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img src="images/img1.png" class ="html">
+            </div>
+        </div>
+        <ul class="icons">
+            <li><a href="python.html"><img src="images/icon 1.png" onmouseover="imgSlider('images/img 2.png'); changeCirclecolor('#3772a2ae')"></a></li>
+            <li><a href="javascript.html"><img src="images/icon 2.png" onmouseover="imgSlider('images/img 3.png'); changeCirclecolor('#ffd300')"></a></li>
+            <li><a href="csharp.html"><img src="images/icon 3.png" onmouseover="imgSlider('images/img 4.png'); changeCirclecolor('#9b0091')"></a></li>
+            <li><a href="c.html"><img src="images/icon 4.png" onmouseover="imgSlider('images/img 5.png'); changeCirclecolor('#0056cf')"></a></li>
+            <li><a href="cplus.html"><img src="images/icon 5.png" onmouseover="imgSlider('images/img 6.png'); changeCirclecolor('#003f9e')"></a></li>
+            <li><a href="swift.html"><img src="images/icon 6.png" onmouseover="imgSlider('images/img 7.png'); changeCirclecolor('#f8aa00')"></a></li>
+            <li><a href="ruby.html"><img src="images/icon 7.png" onmouseover="imgSlider('images/img 8.png'); changeCirclecolor('#d8000a')"></a></li>
+        </ul>
+        <ul class="social">
+            <li><a href="#"><img src="images/facebook.png"></a></li>
+            <li><a href="#"><img src="images/twitter.png"></a></li>
+            <li><a href="#"><img src="images/instagram.png"></a></li>
+        </ul>
+    </section>
+
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.html').src = anything;
+        }
+
+        function changeCirclecolor(color){
+            const circle =document.querySelector('.circular');
+            circle.style.background = color;
+
+        }
+    </script>
+</body>
+</html>
